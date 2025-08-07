@@ -28,7 +28,7 @@ Now is not supported
 
 
 # Basic Usage
-### Creating simple .venv
+### Creating simple virtual environment
 
 _This_
 ```bash
