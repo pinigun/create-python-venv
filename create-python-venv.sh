@@ -59,7 +59,8 @@ done
 # Checking existing directiory and flag "-f|--force"
 if [[ $FORCE_RECREATE = false && -d $DEFAULT_VENV_NAME ]]; then
     echo "[WARNING] Directory ${DEFAULT_VENV_NAME} already exist.";
-    read -p "Recreating the environmnet will delete all existing packages. Confirm? [yes/no]: " confirm
+    echo -n "Recreating the environmnet will delete all existing packages. Confirm? [yes/no]: ";
+    read confirm
     case $confirm in
         y|Y|YES|Yes|yes) ;;
         *) exit 1;;
@@ -68,4 +69,4 @@ fi
 
 # Creating python environment
 python3 -m venv $DEFAULT_VENV_NAME --clear
-
+source $DEFAULT_VENV_NAME/bin/activate

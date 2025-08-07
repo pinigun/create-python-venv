@@ -22,13 +22,13 @@ sudo chmod +x "$TARGET_DIR/$GENERAL_FILE_NAME"
 
 
 if [[ -f "$HOME/.bashrc" ]]; then
-    if ! grep -q "alias $ALIAS_NAME='$GENERAL_FILE_NAME'" ~/.bashrc; then
-        sudo echo "alias $ALIAS_NAME='$GENERAL_FILE_NAME'" >> ~/.bashrc;
+    if ! grep -q "alias $ALIAS_NAME='source $GENERAL_FILE_NAME'" ~/.bashrc; then
+        sudo echo "alias $ALIAS_NAME='source $GENERAL_FILE_NAME'" >> ~/.bashrc;
     fi
 fi
 if [[ -f "$HOME/.zshrc" ]]; then
-    if ! grep -q "alias $ALIAS_NAME='$GENERAL_FILE_NAME'" ~/.zshrc; then
-        sudo echo "alias $ALIAS_NAME='$GENERAL_FILE_NAME'" >> ~/.zshrc;
+    if ! grep -q "alias $ALIAS_NAME='source $GENERAL_FILE_NAME'" ~/.zshrc; then
+        sudo echo "alias $ALIAS_NAME='source $GENERAL_FILE_NAME'" >> ~/.zshrc;
     fi
 fi
 
