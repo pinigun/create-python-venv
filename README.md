@@ -9,17 +9,22 @@ Cloning this repository, and after:
 cd create-python-venv
 chmod +x install-linux.sh
 ./install-linux.sh
-# You see it:
-# >>>Finish!
-# >>>To apply changes restart the terminal or use commands:
-# >>>if you use bash:  source ~/.bashrc
-# >>>if you use zsh:   source ~/.zshrc
-# 
-# >>>After you can use 'cpv --help' for check more information.
-
+```
+#### You see it:
+```bash
+Finish!
+To apply changes restart the terminal or use commands:
+if you use bash:  source ~/.bashrc
+if you use zsh:   source ~/.zshrc
+After you can use 'cpv --help' for check more information.
+```
+#### Restart your terminal or use any of this commands
+```bash
 source ~/.bashrc  # If you use bash
 source ~/.zshrc   # If you use zsh
-
+```
+#### Start using!
+```
 cpv --help
 ```
 
